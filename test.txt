@@ -1,0 +1,13 @@
+var mongodb = require('mongodb')
+var Db = mongodb.Db
+var connection = mongodb.Connection
+var server = mongodb.Server
+var host = 127.0.0.1
+var port = 27017
+
+var db = new Db('test',new server(host,port,{}))
+
+db.open((err,conn) => {
+	if err console.log(err)
+	console.log(conn)
+})

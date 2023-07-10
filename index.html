@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title> ToDo App </title>
+</head>
+<body>
+    <div class="main">
+        <section class="app">
+            <button class="mobile-add">
+                +
+            </button>
+            <div class="mobiledlg">
+                <img src="./img/error.png">
+                <p> Error message </p>
+                <button> OK </button>
+            </div>
+            <nav>
+                <h2> ToDo App </h2>
+                <p> Plan, Organise and Accomplish </p>
+            </nav>
+            <div class="tnav">
+                <button class="all active" title="all tasks"> All </button>
+                <button class="done" title="task which are completed or done(marked)"> Accomplished </button>
+                <button class="undone" title="tasks which are not yet done or marked"> Pending </button>
+            </div>
+            <div class="loader">
+                <div class="spinner"></div>
+                <p> Preparing your todos...</p>
+            </div>
+            <div class="empty-todo">
+                No task Added yet
+            </div>
+            <div class="wrapper">
+            </div>
+        </section>
+        <section class="sec2">
+            <div class="dialog">
+                <img src="./img/error.png">
+                <p> Error message </p>
+                <button> OK </button>
+            </div>
+            <div class="addTask">
+                <button id="addt"> Add New Task</button>
+            </div>
+            <div class="task-form">
+                <form action="#">
+                    <h2> Create A Task </h2>
+                    <div class="input">
+                        <label> Task Title </label>
+                        <input type="text" maxlength="25" spellcheck="false">
+                    </div>
+                    <div class="input">
+                        <label> Task Description </label>
+                        <textarea rows="3" maxlength="120" spellcheck="false"></textarea>
+                    </div>
+                    <input type="submit" value="submit" id="sub-task">
+                </form>
+            </div>
+        </section>
+    </div>
+    <script async src="./main.js"></script>
+</body>
+</html>
